@@ -1,0 +1,157 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Modo Claro */
+.light-mode {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #212529;
+}
+
+/* Modo Escuro */
+.dark-mode {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #f8f9fa;
+}
+
+.dark-mode label {
+    color: #ffffff;
+}
+
+.dark-mode .card-title {
+    color: #ffffff;
+}
+
+.dark-mode #most-drawn-text {
+    color: #ffffff;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00b4ff;
+    font-weight: 700;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 180, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-mode .card {
+    background-color: rgba(40, 40, 60, 0.9);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #00b4ff, #007bff);
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+
+.card-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #00b4ff;
+    text-align: center;
+}
+
+#most-drawn-text {
+    white-space: pre-wrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.sequence-container {
+    margin-bottom: 15px;
+}
+
+.ball {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #6f42c1;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(111, 66, 193, 0.8);
+}
+
+footer {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Estilos do Switch */
+.theme-switch {
+    display: flex;
+    align-items: center;
+}
+
+.theme-label {
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #00b4ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
