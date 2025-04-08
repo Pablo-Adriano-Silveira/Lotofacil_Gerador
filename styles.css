@@ -57,6 +57,20 @@ header h1 {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
 }
 
+.btn-download {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: #ffffff;
+    border: none;
+    margin-left: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-download:hover {
+    background: linear-gradient(45deg, #218838, #1e7e34);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+}
+
 .card-title {
     font-family: 'Orbitron', sans-serif;
     color: #00b4ff;

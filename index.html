@@ -28,7 +28,10 @@
                         <form id="analyzer-form">
                             <div class="form-group">
                                 <label for="file-input">Selecione o arquivo CSV:</label>
-                                <input type="file" class="form-control-file" id="file-input" accept=".csv">
+                                <div class="input-group">
+                                    <input type="file" class="form-control-file" id="file-input" accept=".csv">
+                                    <button type="button" id="download-csv" class="btn btn-download">Baixar CSV</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="elements-input">Número de elementos por sequência (15 a 18):</label>
@@ -62,9 +65,7 @@
         </div>
 
         <footer class="text-center mt-4">
-            <p>Desenvolvido por Pablo Adriano - Todos os direitos reservados.</p>
-             <p>   Me Ajude a Tomar um Café -PIX: kaiaks_13@hotmail.com </p>
-            
+            <p>Desenvolvido por Pablo Adriano - PIX: kaiaks_13@hotmail.com</p>
         </footer>
     </div>
 
