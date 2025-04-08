@@ -107,6 +107,33 @@ footer {
     font-size: 14px;
 }
 
+.github-icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+.github-icon:hover {
+    transform: scale(1.1);
+}
+
+.light-mode .github-light {
+    display: inline;
+}
+
+.light-mode .github-dark {
+    display: none;
+}
+
+.dark-mode .github-light {
+    display: none;
+}
+
+.dark-mode .github-dark {
+    display: inline;
+}
+
 /* Estilos do Switch */
 .theme-switch {
     display: flex;
