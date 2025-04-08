@@ -11,9 +11,10 @@ document.getElementById('theme-toggle').addEventListener('change', function() {
     document.querySelector('.theme-label').textContent = isDarkMode ? 'Modo Escuro' : 'Modo Claro';
 });
 
-// Função para baixar o CSV automaticamente
+// Função para baixar o CSV do Google Drive automaticamente
 document.getElementById('download-csv').addEventListener('click', function() {
-    const csvUrl = 'https://raw.githubusercontent.com/Pablo-Adriano-Silveira/Lotofacil_Gerador/main/Lotofacil_ATUAL.csv';
+    const fileId = '1WRo0NJ3-UdYepu0PHDy_J01YMdyixZrm';
+    const csvUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
     const fileName = 'Lotofacil_ATUAL.csv';
 
     const link = document.createElement('a');
